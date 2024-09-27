@@ -1,0 +1,236 @@
+.body {
+  margin: 0;
+  transform: scale(0.9)
+}
+
+.circle {
+  width: 0;
+  padding: 200px;
+  border: 2px solid #f7d307;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  /* transform: translate(42px, 18px); */
+}
+
+.ball {
+  animation-name: rolling;
+  animation-duration: 3s;
+  /* animation-timing-function: steps(20, jump-none); */
+  Animation-iteration-count: 10000;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  /* animation-direction: alternate; */
+  animation-play-state: running;
+  transition: transform .4s;
+}
+/* 
+.ball:hover {
+  animation-play-state: running;
+  transform: scale(1.5);
+} */
+
+@keyframes rolling {
+  0% {
+    transform: translateX(0) rotate(0turn);
+    }
+  20% {
+    transform: translateX(0) rotate(.15turn);
+  }
+  40% {
+    transform: translateX(0) rotate(.2.0turn);
+  } 
+  70% {
+    transform: translateX(0px) rotate(.2.0turn);
+  }
+  100% {transform: translateX(0) rotate(1.0turn);} 
+}
+
+.Buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.Buttons-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Buttons button {
+  padding: 10px 20px;
+  background-color: blue;
+  border-radius: 5px;
+  color:whitesmoke;
+  border: 0;
+}
+
+.zoom-icon {
+  font-size: 1.5rem;
+}
+
+
+.zoom-minus {
+  font-size: 1.5rem;
+}
+
+.major1{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.major1 .m-circle {
+  width: 0;
+  padding: 200px;
+  border: 2px solid #f7d307 ;
+  border-radius: 200px;
+}
+
+.major1 .m-circle1 {
+   width: 0;
+   padding: 180px;
+   border: 2px dashed #f7d307 ;
+   border-radius: 200px;
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   overflow: visible;
+   mask-image: radial-gradient(black 100%, black 100%);
+   mask-position: top;
+   mask-size: 210px;
+   mask-repeat: space;
+}
+
+.major1 .m-circle2 {
+  width: 0;
+  padding: 180px;
+  border: 2px dashed #f7d307 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: left;
+  mask-size: 180px 55%;
+  mask-repeat: space;
+}
+
+.major1 .m-circle3 {
+  width: 0;
+  padding: 180px;
+  border: 2px dashed #f7d307 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: left;
+  mask-size: 180px 55%;
+  mask-repeat: space;
+}
+
+.major1 .m-circle4 {
+  width: 0;
+  padding: 168px;
+  border: 2px dashed #f7d307 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: top;
+  mask-size: 210px;
+  mask-repeat: space;
+}
+
+.major1 .m-circle5 {
+  width: 0;
+  padding: 110px;
+  border: 2px dashed #ff0a99 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: left;
+  mask-size: 110px 55%;
+  mask-repeat: space;
+}
+
+.major1 .m-circle6 {
+  width: 0;
+  padding: 110px;
+  border: 2px dashed #ff0a99 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: top;
+  mask-size: 164px;
+  mask-repeat: space;
+}
+
+.major1 .m-circle7 {
+  width: 0;
+  padding: 50px;
+  border: 2px dashed #ff0a99 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 38%;
+  left: 37%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: top;
+  mask-size: 164px;
+  mask-repeat: space;
+}
+
+.major1 .m-circle8 {
+  width: 0;
+  padding: 10px;
+  border: 2px dashed #ff0a99 ;
+  border-radius: 200px;
+  position: absolute;
+  top: 48%;
+  left: 47%;
+  overflow: visible;
+  mask-image: radial-gradient(black 100%, black 100%);
+  mask-position: top;
+  mask-size: 164px;
+  mask-repeat: space;
+}
+
+
+.major2 {
+  position: absolute;
+  top: 15%;
+  right: 35%;
+}
+
+.major2 .m2-circle {
+  width: 0;
+  padding: 200px;
+  border: 2px solid #f7d307 ;
+  border-radius: 200px;
+  position: absolute;
+  right: 15%;
+} 
+
+.name {
+  color: royalblue;
+  font-size: 1.5rem;
+  animation-name: rolling;
+  animation-play-state: paused;
+  animation-duration: 3s;
+  /* animation-direction: alternate; */
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1000;
+}
